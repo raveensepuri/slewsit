@@ -3,7 +3,7 @@
 html,body{height:100%;margin:0;font-family:Inter,Roboto,Arial,sans-serif;background:var(--bg);color:#111}
 .container{max-width:var(--max-width);margin:0 auto;padding:28px}
 .site-header{border-bottom:1px solid #eee}
-.header-inner{display:flex;align-items:center;justify-content:space-between}
+.header-inner{display:flex;align-items:center;justify-content:space-evenly}
 
 .logo {
   text-align: center;
