@@ -1,1 +1,79 @@
-SlewsIt
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — SlewsIT</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/slewsit-logo.png" alt="SlewsIT Logo" class="logo-img">
+        </a>
+      </div>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropbtn" onclick="toggleDropdown(event)">Services ▾</a>
+              <ul class="dropdown-content">
+                <li><a href="services/cloud.html">Cloud</a></li>
+                <li><a href="services/ai-architecture.html">AI Architecture</a></li>
+                <li><a href="services/ai-integration.html">AI Integration</a></li>
+              </ul>
+            </li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>About SlewsIT (sloo--sit)</h2>
+    <p>SlewsIT builds the foundation for the next generation of intelligent, cloud-native enterprises. We combine deep expertise in cloud infrastructure, AI architecture, and systems integration to help organizations design, deploy, and scale smarter.</p>
+
+    <h3>Mission</h3>
+    <p>To make cloud and AI work seamlessly together so businesses can move faster, operate smarter, and innovate without limits.</p>
+
+    <h3>Brand Meaning</h3>
+    <p>“Slews” = abundance, turning, flexibility → symbolizes scalability and adaptability.</p>
+    <p>“IT” = information technology → directly references cloud and AI services.</p>
+    <p>“SlewsIt”  →  “Scaling IT intelligently”</p>
+
+    <h3>Contact</h3>
+    <p>Email: <a href="mailto:slewsit@gmail.com">slewsit@gmail.com</a></p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>SlewsIT &copy; <span id="year"></span> | All rights reserved</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
+
+<script>
+function toggleDropdown(event) {
+  event.preventDefault();
+  const dropdown = event.target.closest('.dropdown');
+  dropdown.classList.toggle('active');
+
+  // Close other open dropdowns
+  document.querySelectorAll('.dropdown').forEach(d => {
+    if (d !== dropdown) d.classList.remove('active');
+  });
+}
+
+// Close dropdown if clicked outside
+window.addEventListener('click', (e) => {
+  if (!e.target.closest('.dropdown')) {
+    document.querySelectorAll('.dropdown').forEach(d => d.classList.remove('active'));
+  }
+});
+</script>

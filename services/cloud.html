@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cloud Infrastructure — SlewsIT</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <a href="../index.html">
+          <img src="../images/slewsit-logo.png" alt="SlewsIT Logo" class="logo-img">
+        </a>
+      </div>
+      <nav>
+        <ul class="menu">
+          <li><a href="../index.html">Home</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropbtn" onclick="toggleDropdown(event)">Services ▾</a>
+              <ul class="dropdown-content">
+                <li><a href="cloud.html">Cloud</a></li>
+                <li><a href="ai-architecture.html">AI Architecture</a></li>
+                <li><a href="ai-integration.html">AI Integration</a></li>
+              </ul>
+            </li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Cloud Infrastructure Services</h2>
+    <p>We deliver cloud strategy, solution architecture & design, migration, automation, cost optimization, and managed operations across AWS, Azure, and GCP.</p>
+
+    <section class="diagram">
+      <h3>Reference Architecture</h3>
+      <img src="../images/diagram-cloud.svg" alt="Cloud architecture diagram">
+      <p class="caption">Typical SlewsIT cloud architecture: multi-account setup, CI/CD, monitoring, and secure networking.</p>
+    </section>
+
+    <h3>Key offerings</h3>
+    <ul>
+      <li>Cloud strategy & migration</li>
+      <li>Solution Architecture & Design</li>
+      <li>Infrastructure as Code (Terraform)</li>
+      <li>CI/CD & DevOps automation</li>
+      <li>Monitoring, cost optimization & SRE</li>
+      <li>Security & compliance</li>
+    </ul>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> SlewsIT. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>
+
+<script>
+function toggleDropdown(event) {
+  event.preventDefault();
+  const dropdown = event.target.closest('.dropdown');
+  dropdown.classList.toggle('active');
+
+  // Close other open dropdowns
+  document.querySelectorAll('.dropdown').forEach(d => {
+    if (d !== dropdown) d.classList.remove('active');
+  });
+}
+
+// Close dropdown if clicked outside
+window.addEventListener('click', (e) => {
+  if (!e.target.closest('.dropdown')) {
+    document.querySelectorAll('.dropdown').forEach(d => d.classList.remove('active'));
+  }
+});
+</script>
