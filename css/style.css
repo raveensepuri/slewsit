@@ -98,3 +98,40 @@ nav a:hover {
 .flash.success{background:#e6fbff;color:#064a66;border:1px solid #bfeeff}
 .flash.error{background:#fff1f0;color:#6b2a2a;border:1px solid #ffd6d6}
 @media(max-width:800px){.cards{flex-direction:column}}
+
+/* Mobile responsive header adjustment */
+@media (max-width: 768px) {
+  .header-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .logo {
+    margin-bottom: 15px;
+  }
+
+  .main-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .main-nav a {
+    display: block;
+    padding: 8px 0;
+  }
+
+  .dropdown .dropdown-content {
+    position: static;
+    box-shadow: none;
+    border: none;
+    text-align: center;
+  }
+
+  .dropdown-content a {
+    padding: 6px 0;
+  }
+}
