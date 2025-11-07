@@ -80,13 +80,14 @@ nav a:hover {
   display: block;
 }
 
-.hero{padding:48px 0}
+.hero{padding:2px 0}
 .hero h2{margin:0 0 10px;font-size:28px}
 .cards{display:flex;gap:18px;margin-top:20px}
 .card{flex:1;padding:18px;border:1px solid #d6d6d6;border-radius:8px}
 .card h3{margin-top:0}
 .btn{display:inline-block;margin-top:10px;padding:8px 12px;background:var(--accent);color:white;text-decoration:none;border-radius:6px}
 .diagram img{max-width:100%;height:auto;border:1px solid #fafafa;padding:8px;border-radius:6px;background:#fff}
+.diagram2 img{max-width:40%;height:fit-content;border:1px solid #fafafa;padding:8px;border-radius:6px;background:#fff;display: block;margin: 0 auto;}
 .caption{color:var(--muted);font-size:14px}
 .site-footer{border-top:1px solid #eee;margin-top:40px;padding:20px 0;text-align:center;color:var(--muted)}
 .contact-form{max-width:640px;display:flex;flex-direction:column;gap:12px}
