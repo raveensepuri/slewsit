@@ -8,30 +8,28 @@
 </head>
 <body>
   <header class="site-header">
-    <div class="container header-inner">
+    <div class="header-inner">
       <div class="logo">
         <a href="index.html">
           <img src="images/slewsit-logo.png" alt="SlewsIT Logo" class="logo-img">
         </a>
       </div>
-      <nav>
-        <ul class="menu">
-          <li><a href="index.html">Home</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropbtn" onclick="toggleDropdown(event)">Services ▾</a>
-              <ul class="dropdown-content">
-                <li><a href="services/cloud.html">Cloud</a></li>
-                <li><a href="services/ai-architecture.html">AI Architecture</a></li>
-                <li><a href="services/ai-integration.html">AI Integration</a></li>
-              </ul>
-            </li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+          <a href="#" class="dropbtn" onclick="toggleDropdown(event)">Services ▾</a>
+          <ul class="dropdown-content">
+            <li><a href="services/cloud.html">Cloud Infrastructure</a></li>
+            <li><a href="services/ai-architecture.html">AI Architecture</a></li>
+            <li><a href="services/ai-integration.html">AI Integration</a></li>
+          </ul>
+        </div>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
       </nav>
     </div>
   </header>
-
   <main class="container">
     <h2>Contact SlewsIT</h2>
     <p>Have a project or question? Send us a message and we'll reply shortly.</p>

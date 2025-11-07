@@ -16,7 +16,7 @@ document.getElementById('year') && (document.getElementById('year').textContent 
   function renderSubs(){
     const subs = loadSubs();
     if(!subs.length){ demoSec.style.display='none'; return; }
-    demoSec.style.display='block';
+    if(demoSec){ demoSec.style.display='block'; }
     subList.innerHTML = subs.map(s=>`<li><strong>${escapeHtml(s.name)}</strong> (${escapeHtml(s.email)}): ${escapeHtml(s.message)}</li>`).join('');
   }
   function saveSub(obj){
@@ -39,7 +39,7 @@ document.getElementById('year') && (document.getElementById('year').textContent 
       // Open default mail client as fallback for real contact (mailto)
       const subject = encodeURIComponent('SlewsIT contact from ' + name);
       const body = encodeURIComponent(message + '\n\nFrom: ' + name + ' (' + email + ')');
-      window.location.href = 'mailto:info@slewsit.com?subject=' + subject + '&body=' + body;
+      window.location.href = 'mailto:slewsit@gmail.com?subject=' + subject + '&body=' + body;
     });
   }
   if(saveBtn){
