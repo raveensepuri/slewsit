@@ -39,7 +39,7 @@ document.getElementById('year') && (document.getElementById('year').textContent 
       // Open default mail client as fallback for real contact (mailto)
       const subject = encodeURIComponent('SlewsIT contact from ' + name);
       const body = encodeURIComponent(message + '\n\nFrom: ' + name + ' (' + email + ')');
-      window.location.href = 'mailto:info@slewsit.com?subject=' + subject + '&body=' + body;
+      window.location.href = 'mailto:slewsit@gmail.com?subject=' + subject + '&body=' + body;
     });
   }
   if(saveBtn){
