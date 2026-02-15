@@ -1,88 +1,145 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>SlewsIT — Scaling Intelligence in the Cloud</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <title>SlewsIT | Enterprise Platforms</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
   <header class="site-header">
-    <div class="header-inner">
-      <div class="logo">
-        <a href="index.html">
-          <img src="images/slewsit-logo.png" alt="SlewsIT Logo" class="logo-img">
-        </a>
+  <div class="container header-inner">
+    
+    <a href="/" class="logo">
+      <img src="/assets/images/slewsit-logo.png" alt="SlewsIT Logo">
+    </a>
+
+    <nav class="main-nav">
+
+      <!-- Products Dropdown -->      
+      <div class="dropdown">
+      	<a href="/products/" class="dropbtn">Products ▾</a>
+    	<div class="dropdown-content">
+      	  <a href="/bi-platform/">BI Platform</a>
+          <a href="/financial-data-platform/">Financial Data Platform</a>
+          <a href="/ske/">SKE (SlewsIT Kubernetes Engine)</a>
+        </div>
       </div>
 
-      <nav class="main-nav">
-        <a href="index.html">Home</a>
-        <div class="dropdown">
-          <a href="#" class="dropbtn" onclick="toggleDropdown(event)">Services ▾</a>
-          <ul class="dropdown-content">
-            <li><a href="services/cloud.html">Cloud Infrastructure</a></li>
-            <li><a href="services/ai-architecture.html">AI Architecture</a></li>
-            <li><a href="services/ai-integration.html">AI Integration</a></li>
-          </ul>
+      <!-- Services Dropdown -->
+      <div class="dropdown">
+        <a href="/services/" class="dropbtn">Services ▾</a>
+        <div class="dropdown-content">
+          <a href="/services/cloud/">Cloud Infrastructure</a>
+          <a href="/services/ai-architecture/">AI Architecture</a>
+          <a href="/services/ai-integration/">AI Integration</a>
+          <a href="/services/regulatory-reporting/">Regulatory Reporting</a>
         </div>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </div>
-  </header>
-  <main class="container">
-    <section class="hero">
-      <h2>Scaling Intelligence in the Cloud</h2>
-      <p>We design, deploy, and operate cloud-native infrastructure and AI systems for enterprises.</p>
-    </section>
-    
-    <section class="cards">
-      <article class="card">
-        <h3>Cloud Infrastructure</h3>
-        <p>Cloud strategy, Migration, Solution Architecture & Design, DevOps automation, and SRE practices across AWS, Azure, and GCP.</p>
-        <p><a class="btn" href="services/cloud.html">Learn more</a></p>
-      </article>
+      </div>
 
-      <article class="card">
-        <h3>AI Architecture</h3>
-        <p>Scalable ML pipelines, feature stores, and MLOps to operationalize models in production.</p>
-        <p><a class="btn" href="services/ai-architecture.html">Learn more</a></p>
-      </article>
+      <!-- Industries Dropdown -->
+      <div class="dropdown">
+        <a href="/industries/" class="dropbtn">Industries ▾</a>
+        <div class="dropdown-content">
+          <a href="/industries/fintech/">FinTech & Capital Markets</a>
+          <a href="/industries/medtech/">MedTech & Healthcare Technology</a>
+        </div>
+      </div>
 
-      <article class="card">
-        <h3>AI Integration</h3>
-        <p>API-driven model serving, analytics, and workflow automation to embed intelligence into products.</p>
-        <p><a class="btn" href="services/ai-integration.html">Learn more</a></p>
-      </article>
-    </section>
-  </main>
+      <a href="/contact/">Contact</a>
+      <a href="/about/">About</a>
+      <a href="/blog/">Blog</a>
+    </nav>
 
-  <footer class="site-footer">
+  </div>
+</header>
+
+  <section class="hero">
     <div class="container">
-      <p>SlewsIT &copy; <span id="year"></span> | All rights reserved</p>
+      <h1>Enterprise-Grade Fintech & Cloud Platforms</h1>
+      <p>Scalable data, analytics and infrastructure systems for regulated industries.</p>
+      <a href="/products" class="btn-primary">Explore Products</a>
     </div>
-  </footer>
+  </section>
+  <section class="section hero">
+<img src="/assets/images/landing.png" alt="SlewsIT Architecture" class="home-arch-image" />
+<div class="container">
+<h1>Financial Intelligence, Engineered.</h1>
+<p>IP-led consulting and enterprise data platform accelerators for banking, fintech, and regulated industries.</p>
+<p>We combine strategic advisory with reusable platform components to accelerate transformation and reduce delivery risk.</p>
+</div>
+</section>
 
-  <script src="js/main.js"></script>
+<section class="section">
+<div class="container">
+<h2>Platform Capabilities</h2>
+
+<div class="grid-3">
+
+<div class="card">
+<h3>Financial Data Foundation</h3>
+<p>Prebuilt ingestion pipelines, normalized financial schemas, and governed data models designed for regulated environments.</p>
+</div>
+
+<div class="card">
+<h3>Executive Intelligence Layer</h3>
+<p>KPI libraries, board-ready dashboards, and performance analytics frameworks aligned to CFO and CDO priorities.</p>
+</div>
+
+<div class="card">
+<h3>Regulatory Reporting Framework</h3>
+<p>Automated compliance workflows, validation logic, and audit-ready reporting modules built for financial institutions.</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<h2>Consulting Services</h2>
+
+<div class="grid-3">
+
+<div class="card">
+<h3>Data Strategy &amp; Architecture</h3>
+<p>Enterprise data modernization roadmaps and cloud-native architecture design.</p>
+</div>
+
+<div class="card">
+<h3>Platform Implementation</h3>
+<p>Deployment of scalable financial intelligence systems powered by our accelerators.</p>
+</div>
+
+<div class="card">
+<h3>Regulatory Transformation</h3>
+<p>End-to-end automation of reporting, governance, and compliance data workflows.</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<h2>Industry Focus</h2>
+<p>Banking · Fintech · Capital Markets · Insurance</p>
+<p>Delivering governed, scalable, and audit-ready data platforms for regulated enterprises.</p>
+</div>
+</section>
+
+<section class="section cta">
+<div class="container">
+<h2>Modernize Your Financial Intelligence Stack</h2>
+<p>Engage with SlewsIT to design and deploy a governed, scalable, and compliance-ready data platform.</p>
+<p><a href="/contact/" class="btn">Schedule a Strategy Discussion</a></p>
+</div>
+</section>
+
+  <footer class="footer">
+  <div class="container">
+    <p>© 2026 SlewsIT. Enterprise Platforms for Regulated Industries.</p>
+  </div>
+</footer>
+
 </body>
 </html>
-
-<script>
-function toggleDropdown(event) {
-  event.preventDefault();
-  const dropdown = event.target.closest('.dropdown');
-  dropdown.classList.toggle('active');
-
-  // Close other open dropdowns
-  document.querySelectorAll('.dropdown').forEach(d => {
-    if (d !== dropdown) d.classList.remove('active');
-  });
-}
-
-// Close dropdown if clicked outside
-window.addEventListener('click', (e) => {
-  if (!e.target.closest('.dropdown')) {
-    document.querySelectorAll('.dropdown').forEach(d => d.classList.remove('active'));
-  }
-});
-</script>
