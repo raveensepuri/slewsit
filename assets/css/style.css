@@ -2,7 +2,6 @@ body { margin:0; font-family: Arial, sans-serif; color:#111; }
 .container { width:90%; max-width:1100px; margin:auto; }
 .site-header { background:#0a1f44; padding:20px 0; }
 .site-header a { color:white; margin-right:20px; text-decoration:none; }
-.hero { background:#112d66; color:white; padding:10px 20px; text-align:center; }
 .section { padding:20px 0; }
 .grid-3 { display:grid; grid-template-columns:repeat(3,1fr); gap:30px; }
 .card { border:1px solid #eee; padding:20px; border-radius:8px; }
@@ -171,6 +170,168 @@ body { margin:0; font-family: Arial, sans-serif; color:#111; }
   white-space: pre;
 }
 
+/* ============================= */
+/* HOME PAGE — Executive Theme */
+/* ============================= */
+
+.home-landing {
+  background: linear-gradient(180deg, #0c0f14 0%, #111827 100%);
+  padding: 80px 10%;
+  color: #e5e7eb;
+  animation: fadeInPage 0.8s ease-in-out;
+}
+
+/* Header */
+
+.home-header {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 70px auto;
+}
+
+.home-header h1 {
+  font-size: 42px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.home-header p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #cbd5e1;
+}
+
+/* Grid Section */
+
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 35px;
+  margin-bottom: 80px;
+}
+
+.home-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 35px;
+  border-radius: 14px;
+  backdrop-filter: blur(6px);
+  transition: all 0.3s ease;
+  animation: fadeUp 0.8s ease forwards;
+  opacity: 0;
+}
+
+.home-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(59, 130, 246, 0.6);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.home-card h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.home-card p,
+.home-card li {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #cbd5e1;
+}
+
+.home-card ul {
+  padding-left: 18px;
+}
+
+/* Footer CTA */
+
+.home-footer {
+  margin-top: 90px;
+  text-align: center;
+  padding-top: 60px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.home-footer h3 {
+  font-size: 26px;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.home-footer p {
+  font-size: 16px;
+  margin-bottom: 25px;
+  color: #cbd5e1;
+}
+
+/* Button Polish */
+
+.home-footer .btn {
+  padding: 12px 28px;
+  background: linear-gradient(90deg, #2563eb, #3b82f6);
+  color: #ffffff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.home-footer .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(59, 130, 246, 0.5);
+}
+
+/* Animations */
+
+@keyframes fadeInPage {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Stagger Animation */
+
+.home-card:nth-child(1) { animation-delay: 0.1s; }
+.home-card:nth-child(2) { animation-delay: 0.2s; }
+.home-card:nth-child(3) { animation-delay: 0.3s; }
+
+.team-member { animation-delay: 0.4s; }
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .team-member {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .team-photo img {
+    width: 140px;
+    height: 140px;
+  }
+
+  .home-landing {
+    padding: 60px 6%;
+  }
+}
 /* Products landing */
 
 .products-landing {
@@ -1279,4 +1440,99 @@ textarea {
   .paper {
     max-width: 860px;
   }
+}
+
+/* ------------------------------------------
+   Whitepaper Images
+------------------------------------------ */
+
+.paper-body img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 28px auto;
+  border-radius: 6px;
+}
+
+/* ------------------------------------------
+   Whitepaper Tables
+------------------------------------------ */
+
+.paper-body table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 28px 0 36px 0;
+  font-size: 0.96rem;
+  line-height: 1.6;
+  display: block;
+  overflow-x: auto;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+}
+
+.paper-body th,
+.paper-body td {
+  padding: 14px 16px;
+  border: 1px solid #e5e7eb;
+  vertical-align: top;
+}
+
+.paper-body th {
+  background-color: #0f172a;
+  color: #ffffff;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.paper-body tr:nth-child(even) {
+  background-color: #f8fafc;
+}
+
+/* hero section */
+
+.hero {
+  position: relative;
+  padding: 20px 0 10px 0;
+  text-align: center;
+  background: linear-gradient(
+    135deg,
+    #0f172a 0%,
+    #0b1120 50%,
+    #0a0f1d 100%
+  );
+  overflow: hidden;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at 50% 20%,
+    rgba(59, 130, 246, 0.08),
+    transparent 60%
+  );
+  pointer-events: none;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+}
+
+.hero h1 {
+  font-size: 42px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #ffffff;
+  letter-spacing: -0.5px;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #cbd5e1;
+  line-height: 1.7;
+  max-width: 760px;
+  margin: 0 auto 12px auto;
 }
