@@ -568,6 +568,70 @@ body { margin:0; font-family: Arial, sans-serif; color:#111; }
     border-radius: 8px;
 }
 
+/* company-landing */
+
+.company-landing {
+    background-color: #0f172a;
+    padding: 80px 40px;
+    color: #f8fafc;
+    min-height: 100vh;
+}
+
+.company-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.company-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+}
+
+.company-card {
+    background-color: #1e293b;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.companys-footer {
+    margin-top: 80px;
+    text-align: center;
+    opacity: 0.85;
+}
+
+/* company-landing */
+
+.company-landing {
+    background-color: #111827;
+    padding: 80px 40px;
+    color: #f9fafb;
+    min-height: 100vh;
+}
+
+.company-header {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.company-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+}
+
+.company-block {
+    background-color: #1f2937;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.company-footer {
+    margin-top: 80px;
+    text-align: center;
+    opacity: 0.85;
+}
+
 /* ============================= */
 /* ABOUT PAGE — Executive Theme */
 /* ============================= */

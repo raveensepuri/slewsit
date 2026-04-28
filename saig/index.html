@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SlewsIT | Enterprise Platforms</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+  <div class="container header-inner">
+    
+    <a href="/" class="logo">
+      <img src="/assets/images/slewsit-logo.png" alt="SlewsIT Logo">
+    </a>
+
+    <nav class="main-nav">
+
+      <!-- Products Dropdown -->      
+      <div class="dropdown">
+      	<a href="/products/" class="dropbtn">Products ▾</a>
+    	<div class="dropdown-content">
+      	  <a href="/bi-platform/">BI Platform</a>
+          <a href="/financial-data-platform/">Financial Data Platform</a>
+          <a href="/ske/">SKE (SlewsIT Kubernetes Engine)</a>
+          <a href="/saig/">SAIG (SlewsIT API AI Inference Gateway)</a>
+        </div>
+      </div>
+
+      <!-- Services Dropdown -->
+      <div class="dropdown">
+        <a href="/services/" class="dropbtn">Services ▾</a>
+        <div class="dropdown-content">
+          <a href="/services/cloud/">Cloud Infrastructure</a>
+          <a href="/services/ai-architecture/">AI Architecture</a>
+          <a href="/services/ai-integration/">AI Integration</a>
+          <a href="/services/regulatory-reporting/">Regulatory Reporting</a>
+        </div>
+      </div>
+
+      <!-- Industries Dropdown -->
+      <div class="dropdown">
+        <a href="/industries/" class="dropbtn">Industries ▾</a>
+        <div class="dropdown-content">
+          <a href="/industries/fintech/">FinTech & Capital Markets</a>
+          <a href="/industries/medtech/">MedTech & Healthcare Technology</a>
+        </div>
+      </div>
+
+      <!-- Company Dropdown -->
+      <div class="dropdown">
+        <a href="/company/" class="dropbtn">Company ▾</a>
+        <div class="dropdown-content">
+          <a href="/company/contact/">Contact</a>
+          <a href="/company/about/">About</a>
+          <a href="/company/blog/">Blog</a>
+        </div>
+      </div>
+
+    </nav>
+
+  </div>
+</header>
+
+  <section class="products-landing">
+
+<div class="products-header">
+<h1>SAIG – SlewsIT AI Inference Gateway</h1>
+<p>AI-native API gateway engineered for high-performance inference, intelligent routing, and hardware-aware scalability.</p>
+<p>A next-generation control layer that unifies API management, AI model orchestration, and GPU-accelerated inference across enterprise environments.</p>
+</div>
+
+<div class="products-architecture">
+<h2>SAIG Architecture</h2>
+<p>Three-plane architecture separating control, data, and AI inference for scalable, high-efficiency AI systems.</p>
+<img src="/assets/images/saig-architecture.png" alt="SAIG Architecture" class="products-arch-image" />
+</div>
+
+<div class="products-content">
+
+<div class="products-block">
+<h2>Architecture Walkthrough</h2>
+<p><strong>Northbound Interface:</strong> REST/HTTPS APIs for application, SDK, and client integration.</p>
+<p><strong>Gateway Data Plane:</strong> Stateless request processing, routing, load balancing, and streaming inference.</p>
+<p><strong>Control Plane:</strong> Centralized configuration, service discovery, and traffic policy management.</p>
+<p><strong>AI Inference Plane:</strong> GPU/CPU-based model execution for LLMs, embeddings, and ML pipelines.</p>
+<p><strong>Service Mesh:</strong> Internal gRPC communication between gateway and backend services.</p>
+</div>
+
+<div class="products-block">
+<h2>Core Capabilities</h2>
+<ul>
+<li>AI-aware API gateway with model-based routing</li>
+<li>Token-aware load balancing for GPU optimization</li>
+<li>GPU memory-aware request scheduling</li>
+<li>Streaming inference (SSE, WebSockets, gRPC)</li>
+<li>Prompt caching for cost and latency reduction</li>
+<li>Multi-tenant isolation with quotas and rate limiting</li>
+<li>Integrated AI guardrails (PII masking, prompt filtering)</li>
+</ul>
+</div>
+
+<div class="products-block">
+<h2>Deployment Evolution</h2>
+<p><strong>Phase 1 – CPU PoC:</strong> Go-based gateway with HTTP-to-gRPC bridging and CPU inference backends.</p>
+<p><strong>Phase 2 – Scaled Cluster:</strong> Horizontally scalable gateway instances with distributed service registry.</p>
+<p><strong>Phase 3 – Hardware Accelerated:</strong> DPU offload for networking and GPU-based inference for large-scale AI workloads.</p>
+</div>
+
+<div class="products-block">
+<h2>AI Routing &amp; Inference Model</h2>
+<ul>
+<li>Model-based routing (LLMs, embeddings, search)</li>
+<li>Region and tenant-aware routing policies</li>
+<li>Dynamic routing based on GPU availability and queue depth</li>
+<li>Support for heterogeneous compute (CPU, GPU, DPU)</li>
+</ul>
+</div>
+
+<div class="products-block">
+<h2>Use Case – Enterprise LLM Gateway</h2>
+<p>An enterprise deploying multiple AI models requires unified access, cost control, and performance optimization.</p>
+<ul>
+<li>Applications send inference requests through SAIG.</li>
+<li>Gateway routes requests to optimal GPU clusters based on model and load.</li>
+<li>Token-aware balancing maximizes GPU throughput.</li>
+<li>Observability tracks latency, tokens, and utilization.</li>
+</ul>
+<p><strong>Outcome:</strong> Reduced AI infrastructure cost with improved latency and centralized governance.</p>
+</div>
+
+<div class="products-block">
+<h2>Observability &amp; Control</h2>
+<ul>
+<li>Real-time metrics (latency, tokens/sec, throughput)</li>
+<li>Distributed tracing across inference pipeline</li>
+<li>GPU utilization and queue monitoring</li>
+<li>Centralized configuration and policy management</li>
+</ul>
+</div>
+
+<div class="products-block">
+<h2>Technology Stack</h2>
+<ul>
+<li>Gateway: Go (high-performance networking)</li>
+<li>RPC: gRPC service mesh</li>
+<li>Config &amp; Registry: etcd / Consul</li>
+<li>Metrics: Prometheus</li>
+<li>Tracing: OpenTelemetry</li>
+<li>Cache: Redis</li>
+<li>Orchestration: Kubernetes</li>
+</ul>
+</div>
+
+<div class="products-block">
+<h2>Business Impact</h2>
+<ul>
+<li>Optimize GPU utilization and reduce AI costs</li>
+<li>Enable scalable enterprise AI deployments</li>
+<li>Centralize AI access and governance</li>
+<li>Improve inference latency and throughput</li>
+<li>Accelerate AI platform standardization</li>
+</ul>
+</div>
+
+</div>
+
+<div class="products-footer">
+<h3>Power Enterprise AI Infrastructure</h3>
+<p>Deploy intelligent, scalable, and hardware-optimized AI inference platforms.</p>
+<p><a href="/contact/" class="btn">Engage SlewsIT</a></p>
+</div>
+
+</section>
+
+  <footer class="footer">
+  <div class="container">
+    <p>© 2026 SlewsIT. Enterprise Platforms for Regulated Industries.</p>
+  </div>
+</footer>
+
+</body>
+</html>
